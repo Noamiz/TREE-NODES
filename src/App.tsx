@@ -3,7 +3,6 @@ import "./App.scss";
 import API from "./API";
 import Tree, { TreeDefinition } from "./components/tree";
 import { connect } from "react-redux";
-import { setTrees } from "./treeState/treeActions";
 import generateId from "./utils/idGenerator";
 import saveButton from "./assets/saveButton.png";
 import reloadButton from "./assets/reloadButton.png";
@@ -14,6 +13,7 @@ import {
   setNumOfNodes,
   renameItem,
   removeItem,
+  setTrees
 } from "./treeState/treeActions";
 import calculateRecusriveNumOfNodes from "./utils/calculateNodes";
 
